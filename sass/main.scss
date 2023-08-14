@@ -1,0 +1,22 @@
+// utils
+@import './utils/variables';
+@import './utils/normalize';
+// @import "./utils/visually-hidden";
+
+// base
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+@import './base/header';
+// @import "./base/logo";
+
+// layouts
+@import "./layouts/nav";
+@import "./layouts/hat";
+@import "./layouts/about";
+@import "./layouts/main-goals";
+@import "./layouts/our-project ";
+@import "./layouts/feedback";
+@import "./layouts/footer";
+
+

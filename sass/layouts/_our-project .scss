@@ -1,0 +1,89 @@
+.our_project {
+  &__title {
+    color: var(--gray-4);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: calc(64 / 64);
+
+    margin-bottom: 60px;
+  }
+  &-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-wrapper {
+    width: 570px;
+    height: 255px;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.8)),
+      url(../../images/our_project/Rectangle12__@1x.jpg);
+  }
+
+  &-wrapper__text {
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(64 / 64);
+
+    padding: 48px 78px 0px 79px;
+    margin-bottom: 8px;
+  }
+  &-wrapper__link {
+    display: flex;
+    width: 212px;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-family: var(--auxiliary-font);
+    font-size: 12px;
+    font-style: normal;
+    line-height: calc(12 / 12);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    padding-left: 79px;
+
+    cursor: pointer;
+
+    transition-property: background-color, width, height, padding-left,
+      justify-content;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  &-wrapper__link:hover,
+  &-wrapper__link:focus {
+    background-color: var(--gray-1);
+    width: 222px;
+    height: 71px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    gap: 12px;
+    color: white;
+    width: 222px;
+    height: 71px;
+    background-color: var(--gray-1);
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 81%;
+
+    cursor: pointer;
+
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.66);
+  }
+}

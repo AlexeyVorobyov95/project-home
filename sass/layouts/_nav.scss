@@ -1,0 +1,38 @@
+.logo-link {
+  display: flex;
+  margin-right: 330px;
+}
+
+.logo-img {
+  width: 68px;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 60px;
+  }
+  &__item.current {
+    border-bottom: 1px solid var(--gray-1);
+    border-top: 1px solid var(--gray-1);
+  }
+
+  &__link {
+    width: 68px;
+    color: var(--gray-1);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(12 / 12);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    transition-property: font-weight;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+  &__link:focus,
+  &__link:hover {
+    font-weight: 700;
+  }
+}

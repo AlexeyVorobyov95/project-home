@@ -1,0 +1,100 @@
+.hat-container {
+  display: flex;
+}
+
+.hat-wrapper {
+  padding: 333px 122px 29px 0px;
+
+  &__title {
+    width: 277px;
+    color: var(--gray-4);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: calc(64 / 64);
+    margin-bottom: 90px;
+  }
+  &__title--span {
+    color: var(--gray-1);
+    font-weight: 700;
+  }
+  &__container {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 94px;
+  }
+  &__container__button {
+    width: 53px;
+    height: 53px;
+    border: 1px solid #f2f2f2;
+    background: #f9f9f9;
+
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+
+  &__container__button:hover,
+  &__container__button:focus {
+    box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.66);
+  }
+
+  &__container-number {
+    display: flex;
+    align-items: center;
+  }
+  &__container-number__text {
+    color: var(--gray-4);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 24);
+  }
+  &__container-number__element {
+    transform: rotate(316deg);
+    width: 44px;
+    height: 1px;
+    background-color: var(--gray-4);
+    margin-right: 32px;
+    margin-left: 26px;
+  }
+
+  &-img {
+    width: 770px;
+    background-image: url(../../images/hat/rectangle_6__@1x.jpg);
+  }
+
+  &__img__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 222px;
+    height: 71px;
+    color: var(--gray-1, #333);
+
+    font-style: normal;
+
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-top: 98%;
+    background-color: #fff;
+
+    cursor: pointer;
+
+    transition-property: background-color, color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  }
+
+  &__img__link:hover,
+  &__img__link:focus {
+    background-color: var(--gray-1);
+    color: #fff;
+  }
+  &__img__link:hover,
+  &__img__link:focus + icon-shape-right {
+    fill: #fff;
+  }
+}
